@@ -1,12 +1,8 @@
-version: '3'
+version: '2'
+
 services:
-  solr:
-    image: solr:latest
+  solr-node1:
+    image: bitnami/solr:latest
     restart: always
     ports:
-     - "172.17.0.1:8983:8983"
-    volumes:
-      - ./data:/var/solr
-    command:
-      - solr-precreate
-      - gettingstarted
+      - '172.17.0.1:8983:8983'
