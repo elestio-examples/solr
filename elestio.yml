@@ -30,7 +30,7 @@ lifeCycleConfig:
   preRestoreCommand: "./scripts/preRestore.sh"
   postRestoreCommand: "./scripts/postRestore.sh"
 webUI:
-  - url: "https://[CI_CD_DOMAIN]"
+  - url: "https://[CI_CD_DOMAIN]/solr/#/login"
     label: "Solr Admin"
     login: "root"
     password: "[ADMIN_PASSWORD]"
