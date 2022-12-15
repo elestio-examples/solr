@@ -12,7 +12,4 @@ services:
       - SOLR_ADMIN_PASSWORD=${ADMIN_PASSWORD}
       - SOLR_CORES=my_core
     volumes:
-      - ./data:/var/solr
-    command:
-      - solr-precreate
-      - gettingstarted
+      - "./data:/var/solr"
