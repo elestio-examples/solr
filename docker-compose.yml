@@ -1,15 +1,18 @@
-version: '2'
+version: '3'
 
 services:
-  solr-node1:
-    image: bitnami/solr:latest
+  solr:
+    image: solr
     restart: always
     ports:
-      - '8983:8983'
+      - '172.17.0.1:8983:8983'
     environment:
       - SOLR_ENABLE_AUTHENTICATION=yes
       - SOLR_ADMIN_USERNAME=${SOLR_ADMIN_USERNAME}
       - SOLR_ADMIN_PASSWORD=${ADMIN_PASSWORD}
       - SOLR_CORES=my_core
     volumes:
-      - ./data:/var/data/solr
+      - ./data:/var/solr
+    command:
+    - solr-precreate
+    - gettingstarted
