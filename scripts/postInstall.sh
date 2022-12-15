@@ -1,2 +1,2 @@
 echo "Waiting...";
-sleep 20s;
+sleep 40s;
