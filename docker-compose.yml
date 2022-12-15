@@ -12,4 +12,4 @@ services:
       - SOLR_ADMIN_PASSWORD=${ADMIN_PASSWORD}
       - SOLR_CORES=my_core
     volumes:
-      - ./data:/opt/var/solr
+      - ./data:/var/data/solr
