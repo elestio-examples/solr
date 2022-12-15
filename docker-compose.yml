@@ -10,6 +10,6 @@ services:
       - SOLR_ENABLE_AUTHENTICATION=yes
       - SOLR_ADMIN_USERNAME=${SOLR_ADMIN_USERNAME}
       - SOLR_ADMIN_PASSWORD=${ADMIN_PASSWORD}
-      - SOLR_CORES=my_core
+      - SOLR_CORES=default
     volumes:
       - "./data:/bitnami"

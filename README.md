@@ -28,7 +28,7 @@ To connect from node.js you'll need the package solr-node <a href="https://www.n
         var solrClient = new SolrNode({
             host: [CI_CD_DOMAIN],
             port: "443",
-            core: "my_core",
+            core: "default",
             protocol: "https",
             user: "root",
             password: "[ADMIN_PASSWORD]",
