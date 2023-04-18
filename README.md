@@ -10,7 +10,7 @@ Deploy Solr server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open Solr UI here:
+You can open Solr UI here:
 
     URL: https://[CI_CD_DOMAIN]
     Login: root
