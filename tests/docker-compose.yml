@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  solr-node1:
+    image: elestio4test/solr:latest
+    restart: always
+    ports:
+      - '172.17.0.1:8983:8983'
+    environment:
+      - SOLR_ENABLE_AUTHENTICATION=yes
+      - SOLR_ADMIN_USERNAME=${SOLR_ADMIN_USERNAME}
+      - SOLR_ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - SOLR_CORES=default
+    volumes:
+      - "./data:/var/solr"
