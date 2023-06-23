@@ -58,14 +58,14 @@ Here are some example snippets to help you get started creating a container.
         image: elestio4test/solr:latest
         restart: always
         ports:
-        - '172.17.0.1:8983:8983'
+            - '172.17.0.1:8983:8983'
         environment:
-        - SOLR_ENABLE_AUTHENTICATION=yes
-        - SOLR_ADMIN_USERNAME=${ADMIN_USERNAME}
-        - SOLR_ADMIN_PASSWORD=${ADMIN_PASSWORD}
-        - SOLR_CORES=default
+            - SOLR_ENABLE_AUTHENTICATION=yes
+            - SOLR_ADMIN_USERNAME=${ADMIN_USERNAME}
+            - SOLR_ADMIN_PASSWORD=${ADMIN_PASSWORD}
+            - SOLR_CORES=default
         volumes:
-        - "./data:/var/solr"
+            - "./data:/var/solr"
 
 
 ### Environment variables
