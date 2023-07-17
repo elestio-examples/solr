@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker build . --tag elestio4test/solr:latest
+docker buildx build . --output type=docker,name=elestio4test/solr:latest | docker load
